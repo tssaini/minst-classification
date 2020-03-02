@@ -27,8 +27,8 @@ simple_nn.fit(train_x, train_y, epochs=10, batch_size=10, validation_split=0.1, 
 
 
 test_x = test.values.astype('float32')
-scaler = StandardScaler()
-test_x = scaler.fit_transform(test_x)
+
+test_x = scaler.transform(test_x)
 
 preds = simple_nn.predict_classes(test_x, verbose=0)
 
