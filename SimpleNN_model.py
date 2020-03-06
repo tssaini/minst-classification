@@ -1,6 +1,7 @@
 from tensorflow import keras
 from tensorflow.keras import Sequential
 from tensorflow.keras.layers import Dense, Activation, Dropout
+from tensorflow.keras import optimizers
 
 def simpleNN(input_dim, nb_classes):
     model = Sequential()
